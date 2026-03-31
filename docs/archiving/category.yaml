@@ -1,0 +1,179 @@
+compound_types:
+  Aromatic:
+    name_zh: 芳香化合物
+    name_en: Aromatic Compounds
+    subcategories:
+      Monocyclic_Aromatic:
+        name_zh: 单环芳烃
+        name_en: Monocyclic Aromatic
+      Polycyclic_Aromatic:
+        name_zh: 多环芳烃(PAHs)
+        name_en: Polycyclic Aromatic Hydrocarbons (PAHs)
+      Heterocyclic_Aromatic:
+        name_zh: 杂环芳烃
+        name_en: Heterocyclic Aromatic
+      Aromatic_Phenol:
+        name_zh: 芳香醇/酚
+        name_en: Aromatic Phenol
+      Aromatic_Carboxylic_Acid:
+        name_zh: 芳香酸
+        name_en: Aromatic Carboxylic Acid
+      Aromatic_Amine:
+        name_zh: 芳香胺
+        name_en: Aromatic Amine
+      Aromatic_Aldehyde:
+        name_zh: 芳香醛
+        name_en: Aromatic Aldehyde
+      Aromatic_Ketone:
+        name_zh: 芳香酮
+        name_en: Aromatic Ketone
+  Aliphatic:
+    name_zh: 脂肪族化合物
+    name_en: Aliphatic Compounds
+    subcategories:
+      Alkane:
+        name_zh: 烷烃
+        name_en: Alkane
+      Alkene:
+        name_zh: 烯烃
+        name_en: Alkene
+      Alkyne:
+        name_zh: 炔烃
+        name_en: Alkyne
+      Cycloalkane:
+        name_zh: 环烷烃
+        name_en: Cycloalkane
+      Alcohol:
+        name_zh: 脂肪醇
+        name_en: Alcohol
+      Carboxylic_Acid:
+        name_zh: 脂肪羧酸
+        name_en: Carboxylic Acid
+      Ester:
+        name_zh: 酯类
+        name_en: Ester
+      Ether:
+        name_zh: 醚类
+        name_en: Ether
+      Amine:
+        name_zh: 脂肪胺
+        name_en: Amine
+  Nitrogen_containing:
+    name_zh: 含氮化合物
+    name_en: Nitrogen-containing Compounds
+    subcategories:
+      Primary_Amine:
+        name_zh: 伯胺
+        name_en: Primary Amine
+      Secondary_Amine:
+        name_zh: 仲胺
+        name_en: Secondary Amine
+      Tertiary_Amine:
+        name_zh: 叔胺
+        name_en: Tertiary Amine
+      Amide:
+        name_zh: 酰胺
+        name_en: Amide
+      Nitro:
+        name_zh: 硝基化合物
+        name_en: Nitro Compound
+      Nitrile:
+        name_zh: 腈类
+        name_en: Nitrile
+      Amino_Acid:
+        name_zh: 氨基酸
+        name_en: Amino Acid
+  Oxygen_containing:
+    name_zh: 含氧化合物
+    name_en: Oxygen-containing Compounds
+    subcategories:
+      Primary_Alcohol:
+        name_zh: 伯醇
+        name_en: Primary Alcohol
+      Secondary_Alcohol:
+        name_zh: 仲醇
+        name_en: Secondary Alcohol
+      Tertiary_Alcohol:
+        name_zh: 叔醇
+        name_en: Tertiary Alcohol
+      Phenol:
+        name_zh: 酚
+        name_en: Phenol
+      Carboxylic_Acid:
+        name_zh: 羧酸
+        name_en: Carboxylic Acid
+      Aldehyde:
+        name_zh: 醛
+        name_en: Aldehyde
+      Ketone:
+        name_zh: 酮
+        name_en: Ketone
+      Ester:
+        name_zh: 酯
+        name_en: Ester
+      Ether:
+        name_zh: 醚
+        name_en: Ether
+  Sulfur_containing:
+    name_zh: 含硫化合物
+    name_en: Sulfur-containing Compounds
+    subcategories:
+      Thiol:
+        name_zh: 硫醇/硫酚
+        name_en: Thiol/Phenylthiol
+      Sulfide:
+        name_zh: 硫醚
+        name_en: Sulfide
+      Sulfoxide:
+        name_zh: 亚砜
+        name_en: Sulfoxide
+      Sulfone:
+        name_zh: 砜
+        name_en: Sulfone
+      Sulfonic_Acid:
+        name_zh: 磺酸
+        name_en: Sulfonic Acid
+  Phosphorus_containing:
+    name_zh: 含磷化合物
+    name_en: Phosphorus-containing Compounds
+    subcategories:
+      Phosphate_Ester:
+        name_zh: 磷酸酯
+        name_en: Phosphate Ester
+  Halogen_containing:
+    name_zh: 含卤化合物
+    name_en: Halogen-containing Compounds
+    subcategories:
+      Fluorine:
+        name_zh: 氟代物
+        name_en: Fluorine Compound
+      Chlorine:
+        name_zh: 氯代物
+        name_en: Chlorine Compound
+      Bromine:
+        name_zh: 溴代物
+        name_en: Bromine Compound
+      Iodine:
+        name_zh: 碘代物
+        name_en: Iodine Compound
+  High_hydrophobic:
+    name_zh: 高疏水性化合物
+    name_en: High Hydrophobic Compounds
+    subcategories:
+      LogP_gt_4:
+        name_zh: LogP > 4
+        name_en: LogP > 4
+  Medium_hydrophobic:
+    name_zh: 中等疏水性化合物
+    name_en: Medium Hydrophobic Compounds
+    subcategories:
+      LogP_2_to_4:
+        name_zh: 2 < LogP <= 4
+        name_en: 2 < LogP <= 4
+  Hydrophilic:
+    name_zh: 亲水性化合物
+    name_en: Hydrophilic Compounds
+    subcategories:
+      LogP_le_2:
+        name_zh: LogP <= 2
+        name_en: LogP <= 2
