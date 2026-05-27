@@ -1,10 +1,16 @@
-# VisNet-RT: Graph Neural Network for Retention Time Prediction
+# ViSRTI: Geometry-Aware Deep Learning for Retention Time Prediction
 
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
-[RDKit](https://www.rdkit.org/)
+[![RDKit](https://img.shields.io/badge/RDKit-2023.09.1-green)](https://www.rdkit.org/)
 
-VisNet-RT是一个基于图神经网络（GNN）的小分子液相色谱保留时间预测系统。该系统通过端到端学习获得分子的数据驱动表示，并利用这些表示预测小分子的保留时间。
+This repository contains the code for the paper:  
+**"Multi-Feature Fusion with Geometry-Aware Deep Learning for Retention Time Prediction and Isomer-Resolved Candidate Ranking in Non-Targeted Screening"**  
+
+The ViSRTI framework combines 3D molecular geometry encoding (ViSNet) with multi‑feature fusion (physicochemical, toxicity, chromatographic) to predict retention time indices (RTI) and rank candidate isomers in non‑targeted screening.
+
+## Repository Structure
+
 
 ## 目录
 - [简介](#简介)
