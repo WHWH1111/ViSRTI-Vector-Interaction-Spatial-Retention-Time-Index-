@@ -127,54 +127,13 @@ visnet-rt/
 │   ├── prediction_plot_utils.py  # 预测结果绘图工具
 │   └── shap/                 # SHAP分析工具
 │       └── draw.py           # SHAP可视化工具
-├── tests/                    # 测试代码
-│   ├── shap/                 # SHAP可解释性分析相关测试
-│   ├── plt/                  # 绘图相关测试
-│   ├── benchmark_visnet_v2.py  # VisNet V2基准测试
-│   ├── test_etkdg_randomness.py  # ETKDG算法随机性测试
-│   ├── test_sigmoid.py       # Sigmoid函数测试
-│   └── test_single_case.py   # 单案例测试
-├── dev-tools/                # 开发者工具
-│   ├── analyze_multiple_logs.py     # 多日志分析工具
-│   ├── analyze_skipped_distribution.py  # 跳过样本分布分析
-│   ├── filter_data.py        # 数据过滤工具
-│   └── merge_predictions.py  # 预测结果合并工具
 ├── scripts/                  # 脚本目录
-│   ├── analyze/              # 分析脚本
-│   │   ├── analyze_std_accuracy.py  # 标准偏差与准确率分析
-│   │   ├── analyze_uncertain_compounds.py  # 不确定化合物分析
-│   │   ├── calculate_metrics_tail10.py  # 尾部10%数据指标计算
-│   │   ├── calculate_tag_based_metrics.py  # 基于标签的指标计算
-│   │   ├── cluster_analysis-pass-tags.py  # 基于标签的聚类分析
-│   │   └── cluster_analysis.py  # 聚类分析
 │   ├── batch_predict_visnet_v2.py  # VisNet V2批量预测脚本
-│   ├── data-gen/             # 数据生成脚本
-│   │   └── data1028-gen.py   # 数据生成工具
-│   ├── data-merge/           # 数据合并脚本
-│   │   ├── merge_predictions.py  # 预测结果合并
-│   │   └── merge_predictions_with_tags.py  # 带标签的预测结果合并
-│   ├── data-val/             # 数据验证脚本
-│   │   ├── calculate_combined_metrics.py  # 综合指标计算
-│   │   ├── calculate_metrics.py  # 指标计算
-│   │   └── compare_predictions_with_original.py  # 预测结果与原始数据比较
-│   ├── organize_predictions_and_residuals.py  # 组织预测结果与残差
-│   ├── plt/                  # 绘图脚本
-│   │   ├── generate_violin_plot.py  # 生成小提琴图
-│   │   ├── plot_feature_category_heatmap.py  # 特征类别热力图
-│   │   ├── plot_pos_shap_metrics.py  # SHAP特征重要性指标绘图
-│   │   ├── plot_prediction_residuals.py  # 预测残差分析
-│   │   ├── plot_test_metrics_bar_line.py  # 测试指标可视化
-│   │   └── plot_training_metrics.py  # 训练指标可视化
-│   ├── process_violin_data.py  # 小提琴图数据处理
-│   ├── type-shap.bat         # Windows SHAP分析批处理脚本
-│   ├── type-shap.py          # SHAP分析类型处理脚本
 │   └── utils/                # 脚本工具
 │       ├── convert_csv.py    # CSV转换工具
 │       └── csv2xlsx.py       # CSV转Excel工具
 ├── docs/                     # 文档目录
-│   ├── archiving/            # 归档文档
 │   ├── dev-exp/              # 开发经验分享
-│   ├── history/              # 历史文档
 │   ├── setup/                # 安装配置文档
 │   ├── summary/              # 项目总结文档
 │   ├── cli-4.md              # CLI命令文档
