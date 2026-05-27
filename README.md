@@ -142,7 +142,6 @@ visnet-rt/
 │   ├── uncertainty_pred.md   # 不确定性预测文档
 │   └── visnet_v2_model_architecture.md  # VisNet V2模型架构文档
 ├── predictions/              # 预测结果目录
-├── support/                  # 支持文件目录
 └── 主要执行文件              # 核心功能入口
     ├── analyze_shap.py       # SHAP分析主程序
     ├── cross_validation.py   # 交叉验证主程序
