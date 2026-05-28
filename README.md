@@ -16,61 +16,18 @@ The framework serves as a low‑cost orthogonal filter in non‑targeted screeni
 
 ## Repository Structure
 
-visrti/
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── .gitignore
-├── data/ # Empty – user places raw data here (see Data Preparation)
-├── configs/ # Hyperparameter configuration (e.g., default.yaml)
-├── results/ # Output directory (generated at runtime)
-├── src/ # Core source code (modular)
-│ ├── init.py
-│ ├── data/ # Data loading & preprocessing
-│ │ ├── init.py
-│ │ ├── preprocess.py
-│ │ └── dataset.py
-│ ├── models/ # Model definitions
-│ │ ├── init.py
-│ │ ├── visnet_core.py # ViSNet core (3D geometry)
-│ │ ├── visrti_geo.py # ViSRTI‑G (geometry only, baseline)
-│ │ └── visrti_multi.py # ViSRTI‑GP / ViSRTI‑GPT (multi‑feature)
-│ ├── training/ # Training & evaluation logic
-│ │ ├── init.py
-│ │ ├── trainer.py
-│ │ └── tester.py
-│ └── utils/ # Utilities
-│ ├── init.py
-│ ├── atom_types.py
-│ ├── molecule.py
-│ ├── feature_utils.py
-│ ├── evaluation.py
-│ └── shap/
-│ └── draw.py
-└── scripts/ # User‑run entry points
-├── train.py # Single training (VisNetV2 / ViSRTI)
-├── train_5fold.py # 5‑fold cross‑validation
-├── predict.py # Prediction for final model (VisNetV2)
-├── predict_baseline.py # Prediction for baseline models (GNN‑RT, ViSNetV1)
-├── batch_predict.py # Batch prediction for 5‑fold models
-├── cross_validate.py # Cross‑validation evaluation
-├── analyze_shap.py # SHAP importance analysis
-└── classify_compounds.py # Generate compound category tags (for Fig. 5/6)
-
 
 ---
 
 ## Installation
 
-Create a conda environment (Python 3.9) and install dependencies:
-
-```bash
-conda create -n visrti python=3.9
-conda activate visrti
-pip install -r requirements.txt
 
 
 
+
+---
+
+## Installation
 ## 目录
 - [简介](#简介)
 - [安装](#安装)
