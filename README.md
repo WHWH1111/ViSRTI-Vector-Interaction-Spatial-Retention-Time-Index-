@@ -69,9 +69,6 @@ conda create -n visrti python=3.9
 conda activate visrti
 pip install -r requirements.txt
 
-PyTorch and PyTorch Geometric may require CUDA‑specific installation.
-See pytorch.org for CUDA 11.8/12.1 instructions.
-
 
 
 ## 目录
