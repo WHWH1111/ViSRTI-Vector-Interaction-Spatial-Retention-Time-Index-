@@ -7,9 +7,83 @@
 This repository contains the code for the paper:  
 **"Multi-Feature Fusion with Geometry-Aware Deep Learning for Retention Time Prediction and Isomer-Resolved Candidate Ranking in Non-Targeted Screening"**  
 
-The ViSRTI framework combines 3D molecular geometry encoding (ViSNet) with multi‑feature fusion (physicochemical, toxicity, chromatographic) to predict retention time indices (RTI) and rank candidate isomers in non‑targeted screening.
+ViSRTI (Vector‑Interaction‑Spatial Retention Time Index) is an integrated framework that predicts retention time indices (RTI) from molecular SMILES strings. It combines:
+- 3D geometric encoding via ViSNet (equivariant message passing)
+- Multi‑modal feature fusion (physicochemical, toxicity, chromatographic)
+- SHAP‑driven feature optimization and model simplification
+
+The framework serves as a low‑cost orthogonal filter in non‑targeted screening workflows, ranking candidate isomers by RT similarity and narrowing lists from dozens to 3‑5 before expensive standard confirmation.
 
 ## Repository Structure
+
+visrti/
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── .gitignore
+├── data/ # Empty – user places raw data here (see Data Preparation)
+├── configs/ # Hyperparameter configuration (e.g., default.yaml)
+├── results/ # Output directory (generated at runtime)
+├── src/ # Core source code (modular)
+│ ├── init.py
+│ ├── data/ # Data loading & preprocessing
+│ │ ├── init.py
+│ │ ├── preprocess.py
+│ │ └── dataset.py
+│ ├── models/ # Model definitions
+│ │ ├── init.py
+│ │ ├── visnet_core.py # ViSNet core (3D geometry)
+│ │ ├── visrti_geo.py # ViSRTI‑G (geometry only, baseline)
+│ │ └── visrti_multi.py # ViSRTI‑GP / ViSRTI‑GPT (multi‑feature)
+│ ├── training/ # Training & evaluation logic
+│ │ ├── init.py
+│ │ ├── trainer.py
+│ │ └── tester.py
+│ └── utils/ # Utilities
+│ ├── init.py
+│ ├── atom_types.py
+│ ├── molecule.py
+│ ├── feature_utils.py
+│ ├── evaluation.py
+│ └── shap/
+│ └── draw.py
+└── scripts/ # User‑run entry points
+├── train.py # Single training (VisNetV2 / ViSRTI)
+├── train_5fold.py # 5‑fold cross‑validation
+├── predict.py # Prediction for final model (VisNetV2)
+├── predict_baseline.py # Prediction for baseline models (GNN‑RT, ViSNetV1)
+├── batch_predict.py # Batch prediction for 5‑fold models
+├── cross_validate.py # Cross‑validation evaluation
+├── analyze_shap.py # SHAP importance analysis
+└── classify_compounds.py # Generate compound category tags (for Fig. 5/6)
+
+
+---
+
+## Installation
+
+Create a conda environment (Python 3.9) and install dependencies:
+
+```bash
+conda create -n visrti python=3.9
+conda activate visrti
+pip install -r requirements.txt
+
+PyTorch and PyTorch Geometric may require CUDA‑specific installation.
+See pytorch.org for CUDA 11.8/12.1 instructions.
+
+Data Preparation
+The NORMAN database (used in the paper) is not included due to file size.
+To reproduce the experiments:
+
+Download the required .csv files from NORMAN Suspect List Exchange.
+
+Place them in data/raw/ (or directly in data/).
+
+Run the preprocessing script to generate the input format for ViSRTI:
+python scripts/preprocess.py --input data/MMF_GNN_pos.csv --output data/processed/
+Detailed preprocessing steps are described in the paper (Section 2.1–2.2).
+
 
 
 ## 目录
