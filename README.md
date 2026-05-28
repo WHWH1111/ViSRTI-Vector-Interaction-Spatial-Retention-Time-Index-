@@ -72,18 +72,6 @@ pip install -r requirements.txt
 PyTorch and PyTorch Geometric may require CUDA‑specific installation.
 See pytorch.org for CUDA 11.8/12.1 instructions.
 
-Data Preparation
-The NORMAN database (used in the paper) is not included due to file size.
-To reproduce the experiments:
-
-Download the required .csv files from NORMAN Suspect List Exchange.
-
-Place them in data/raw/ (or directly in data/).
-
-Run the preprocessing script to generate the input format for ViSRTI:
-python scripts/preprocess.py --input data/MMF_GNN_pos.csv --output data/processed/
-Detailed preprocessing steps are described in the paper (Section 2.1–2.2).
-
 
 
 ## 目录
